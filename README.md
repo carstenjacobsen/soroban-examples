@@ -106,41 +106,46 @@ Now the contract is on testnet, it can be invoked. For the increment contract th
 
 Run this command to invoke the increment contract (replace the id with the id returned in the previous step):
 
+```
 stellar contract invoke \
   --id CACDYF3CYMJEJTIVFESQYZTN67GO2R5D5IUABTCUG3HXQSRXCSOROBAN \
   --source alice \
   --network testnet \
   -- \
   increment 
+```
 
 The contract will return 1 the first time it’s run, run it again and see the returned value is being incremented.
 
-Testing
+## Testing
 Each of the example smart contracts also has a test file that has test cases for each of the features of the smart contracts. The test will just return a pass/fail result, but it’s a convenient way to check if the code works, without deploying and invoking the contract manually. 
 
-From the root of the contract (e.g. increment) run this command:
+From the root of the contract (e.g. `increment`) run this command:
 
+```
 cargo test
+```
 
-
-Licence
+## Licence
 The example smart contracts are licensed under the Apache 2.0 license. See the LICENSE file for details.
 
-Contributions
+## Contributions
 Contributions are welcome, please create a pull request with the following information: 
 
-Explain the changes/additions you made
-Why are these changes/additions needed or relevant?
-How did you solve the problem, or created the suggested feature?
-Have your changes/additions been thoroughly tested?
-Disclaimer
+- Explain the changes/additions you made
+- Why are these changes/additions needed or relevant?
+- How did you solve the problem, or created the suggested feature?
+- Have your changes/additions been thoroughly tested?
+
+## Disclaimer
 These implementations have not been tested or audited. They are likely to have significant errors and security vulnerabilities. They should not be relied on for any purpose. Please refer to the license for more information.
-References:
-Smart Contract Documentation
-Getting Started Guide
-Example descriptions in the documentation
-Link to examples in GitPod
-Stellar Developers Discord server
+
+## References:
+- [Smart Contract Documentation](https://developers.stellar.org/docs/build)
+- [Getting Started Guide](https://developers.stellar.org/docs/build/smart-contracts/getting-started)
+- [Example descriptions in the documentation](https://developers.stellar.org/docs/build/smart-contracts/example-contracts)
+- [Link to examples in GitPod](https://gitpod.io/#https://github.com/stellar/soroban-examples/tree/v21.6.0)
+- [Stellar Developers Discord server](https://discord.gg/stellardev)
 
 
 
