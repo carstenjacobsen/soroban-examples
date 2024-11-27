@@ -39,7 +39,7 @@ The easiest way to get started experimenting with the example smart contracts, i
 ## Installation
 Stellar smart contracts are written in the [Rust](https://www.rust-lang.org/) programming language and can be deployed to the testnet or mainnet. 
 
-### Prerequisites
+#### Prerequisites
 To build and develop contracts you need only a couple prerequisites:
 
 - A [Rust](https://www.rust-lang.org/) toolchain
@@ -48,7 +48,7 @@ To build and develop contracts you need only a couple prerequisites:
 
 See the [documentation](https://developers.stellar.org/docs/build/smart-contracts/getting-started/setup) for more prerequisites installation instructions. 
 
-### Clone Contracts
+#### Clone Contracts
 The example smart contracts don’t need installation, simply clone the repo:
 
 ```
