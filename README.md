@@ -60,26 +60,32 @@ git clone https://github.com/stellar/soroban-examples
 ### Create Identity
 If an identity for signing transactions has already been created, this part can be skipped. 
 
-When deploying a smart contract to a network, an identity that will be used to sign the transactions must be specified. Let's configure an identity called alice. Any name can be used, but it might be convenient to have some named identities for testing, such as alice, bob, and carol. Notice that the account will be funded using Friendbot. 
+When deploying a smart contract to a network, an identity that will be used to sign the transactions must be specified. Let's configure an identity called alice. Any name can be used, but it might be convenient to have some named identities for testing, such as alice, bob, and carol. Notice that the account will be funded using [Friendbot](https://developers.stellar.org/docs/learn/fundamentals/networks#friendbot). 
 
-stellar keys generate --global alice --network testnet --fund 
+```
+stellar keys generate --global alice --network testnet --fund
+```
 
 Get the public key of alice with this command: 
 
+```
 stellar keys address alice
+```
 
-See the documentation for more information about identities.
+See the [documentation](https://developers.stellar.org/docs/build/smart-contracts/getting-started/setup#configure-an-identity) for more information about identities.
 
-Run Smart Contracts
-Note: The increment contract is used in these instructions, but the instructions are similar for the other contracts, except for how to invoke the contracts.
+### Run Smart Contracts
+*Note: The `increment` contract is used in these instructions, but the instructions are similar for the other contracts, except for how to invoke the contracts.*
 
 The smart contracts can easily be run by deploying them to testnet. Choose a contract and follow these instructions. 
 
-Build
+### Build
 First the smart contract must be built with this command from the increment contract’s root folder:
 
+```
 cd increment
 stellar contract build
+```
 
 A .wasm file will be outputted in the target directory, at target/wasm32-unknown-unknown/release/soroban_increment_contract.wasm. The .wasm file is the built contract.
 
