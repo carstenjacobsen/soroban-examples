@@ -80,26 +80,28 @@ See the [documentation](https://developers.stellar.org/docs/build/smart-contract
 The smart contracts can easily be run by deploying them to testnet. Choose a contract and follow these instructions. 
 
 ### Build
-First the smart contract must be built with this command from the increment contract’s root folder:
+First the smart contract must be built with this command from the `increment` contract’s root folder:
 
 ```
 cd increment
 stellar contract build
 ```
 
-A .wasm file will be outputted in the target directory, at target/wasm32-unknown-unknown/release/soroban_increment_contract.wasm. The .wasm file is the built contract.
+A `.wasm` file will be outputted in the target directory, at `target/wasm32-unknown-unknown/release/soroban_increment_contract.wasm`. The `.wasm` file is the built contract.
 
-Deploy
+### Deploy
 The WASM file can now be deployed to the testnet by running this command:
 
+```
 stellar contract deploy \
   --wasm target/wasm32-unknown-unknown/release/soroban_increment_contract.wasm \
   --source alice \
   --network testnet
+```
 
 When the smart contract has been successfully deployed, the command will return the contract’s ID (e.g. CACDYF3CYMJEJTIVFESQYZTN67GO2R5D5IUABTCUG3HXQSRXCSOROBAN). This ID is needed when the contract is invoked, so make sure to save it.
 
-Invoke
+### Invoke
 Now the contract is on testnet, it can be invoked. For the increment contract there’s only one function to invoke, and that’s the increment() function. Look at the code for the other contracts to see which function to invoke as every example contract is different.
 
 Run this command to invoke the increment contract (replace the id with the id returned in the previous step):
