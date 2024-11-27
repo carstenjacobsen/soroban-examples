@@ -48,16 +48,7 @@ To build and develop contracts you need only a couple prerequisites:
 
 See the [documentation](https://developers.stellar.org/docs/build/smart-contracts/getting-started/setup) for more prerequisites installation instructions. 
 
-### Clone Contracts
-The example smart contracts don’t need installation, simply clone the repo:
-
-```
-git clone https://github.com/stellar/soroban-examples
-```
-
-*Note all smart contract examples are cloned, not individual contracts.*
-
-### Create Identity
+#### Create Identity
 If an identity for signing transactions has already been created, this part can be skipped. 
 
 When deploying a smart contract to a network, an identity that will be used to sign the transactions must be specified. Let's configure an identity called alice. Any name can be used, but it might be convenient to have some named identities for testing, such as alice, bob, and carol. Notice that the account will be funded using [Friendbot](https://developers.stellar.org/docs/learn/fundamentals/networks#friendbot). 
@@ -73,6 +64,15 @@ stellar keys address alice
 ```
 
 See the [documentation](https://developers.stellar.org/docs/build/smart-contracts/getting-started/setup#configure-an-identity) for more information about identities.
+
+### Clone Contracts
+The example smart contracts don’t need installation, simply clone the repo:
+
+```
+git clone https://github.com/stellar/soroban-examples
+```
+
+*Note all smart contract examples are cloned, not individual contracts.*
 
 ### Run Smart Contracts
 *Note: The `increment` contract is used in these instructions, but the instructions are similar for the other contracts, except for how to invoke the contracts.*
