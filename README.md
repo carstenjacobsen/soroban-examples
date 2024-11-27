@@ -117,7 +117,7 @@ stellar contract invoke \
 
 The contract will return 1 the first time it’s run, run it again and see the returned value is being incremented.
 
-
+ 
 ## Testing
 Each of the example smart contracts also has a test file that has test cases for each of the features of the smart contracts. The test will just return a pass/fail result, but it’s a convenient way to check if the code works, without deploying and invoking the contract manually. 
 
