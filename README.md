@@ -2,33 +2,33 @@
 
 This repository contains example smart contracts for key Soroban features and concepts. The examples illustrate how to use the features, in their simplest form. The examples in this repository:
 
-- *account*: This a basic multi-sig account contract that with a customizable per-token authorization policy
-- *alloc*: Allocates a temporary vector holding values (0..count), then computes and returns their sum
-atomic_multiswap: This contract performs a batch of atomic token swaps between multiple parties and does a simple price matching
-atomic_swap: This contract performs an atomic token swap between two parties that don't need to know each other 
-auth: This contract demonstrates how to implement authorization using Soroban-managed auth framework for a simple case
-bls_signature: This is a basic custom account contract that implements the FastAggregateVerify function in BLS Signatures
-cross_contract: Demonstrates how to make cross contract calls
-custom_types: A basic increment contract that implements a custom type
-deep_contract_auth: This example demonstrates how a contract can authorize deep subcontract calls on its behalf
-deployer: This contract deploys another contract Wasm and after deployment it invokes the initialization function of the contract
-errors: This contract demonstrates how to define and generate errors in a contract that invokers of the contract can understand and handle
-eth_abi: Demonstrates how to decode contract specs in the Application Binary Interface format
-events: This contract demonstrates how to publish events from a contract 
-fuzzing: This is the 'timelock' example modified slightly to demonstrate Soroban's fuzzing capabilities.
-hello_world: The simplest smart contract, it takes a parameter value and add it to a vector and returns it
-increment: Demonstrates how to increment a stored value and returning the updated value
-liquidity_pool: A minimalistic implementation of a liquidity pool and token swap
-logging: A basic example of how to use the standard Soroban terminal logging
-mint-lock: Demonstrates token minting, including minting authorization
-other_custom_types: The smart contract implements types, including custom types
-simple_account: A minimal example of an account contract, owned by a single ed25519 public key
-single_offer: This contract implements trading of one token pair between one seller and multiple buyers
-time_lock: This contract demonstrates how to write a timelock and implements a greatly simplified claimable balance
-token: This contract demonstrates how to write a token contract that implements the Token Interface.
-ttl: The contract demonstrates how TTL can be extended for stored keys
-upgradeable_contract: This contract demonstrates how to upgrade the Wasm bytecode using example contracts
-workspace: This contract demonstrates how multiple smart contracts can be developed, tested, and built side-by-side in the same Rust workspace
+- **account**: This a basic multi-sig account contract that with a customizable per-token authorization policy
+- **alloc**: Allocates a temporary vector holding values (0..count), then computes and returns their sum
+atomic_multiswap**: This contract performs a batch of atomic token swaps between multiple parties and does a simple price matching
+- **atomic_swap**: This contract performs an atomic token swap between two parties that don't need to know each other 
+- **auth**: This contract demonstrates how to implement authorization using Soroban-managed auth framework for a simple case
+- **bls_signature**: This is a basic custom account contract that implements the FastAggregateVerify function in BLS Signatures
+- **cross_contract**: Demonstrates how to make cross contract calls
+- **custom_types**: A basic increment contract that implements a custom type
+- **deep_contract_auth**: This example demonstrates how a contract can authorize deep subcontract calls on its behalf
+- **deployer**: This contract deploys another contract Wasm and after deployment it invokes the initialization function of the contract
+- **errors**: This contract demonstrates how to define and generate errors in a contract that invokers of the contract can understand and handle
+- **eth_abi**: Demonstrates how to decode contract specs in the Application Binary Interface format
+- **events**: This contract demonstrates how to publish events from a contract 
+- **fuzzing**: This is the 'timelock' example modified slightly to demonstrate Soroban's fuzzing capabilities.
+- **hello_world**: The simplest smart contract, it takes a parameter value and add it to a vector and returns it
+- **increment**: Demonstrates how to increment a stored value and returning the updated value
+- **liquidity_pool**: A minimalistic implementation of a liquidity pool and token swap
+- **logging**: A basic example of how to use the standard Soroban terminal logging
+- **mint-lock**: Demonstrates token minting, including minting authorization
+- **other_custom_types**: The smart contract implements types, including custom types
+- **simple_account**: A minimal example of an account contract, owned by a single ed25519 public key
+- **single_offer**: This contract implements trading of one token pair between one seller and multiple buyers
+- **time_lock**: This contract demonstrates how to write a timelock and implements a greatly simplified claimable balance
+- **token**: This contract demonstrates how to write a token contract that implements the Token Interface.
+- **ttl**: The contract demonstrates how TTL can be extended for stored keys
+- **upgradeable_contract**: This contract demonstrates how to upgrade the Wasm bytecode using example contracts
+- **workspace**: This contract demonstrates how multiple smart contracts can be developed, tested, and built side-by-side in the same Rust workspace
 
 
 Quick Start
