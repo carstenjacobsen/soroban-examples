@@ -55,9 +55,9 @@ The example smart contracts don’t need installation, simply clone the repo:
 git clone https://github.com/stellar/soroban-examples
 ```
 
-Note all smart contract examples are cloned, not individual contracts.
+*Note all smart contract examples are cloned, not individual contracts.*
 
-Create Identity
+### Create Identity
 If an identity for signing transactions has already been created, this part can be skipped. 
 
 When deploying a smart contract to a network, an identity that will be used to sign the transactions must be specified. Let's configure an identity called alice. Any name can be used, but it might be convenient to have some named identities for testing, such as alice, bob, and carol. Notice that the account will be funded using Friendbot. 
