@@ -30,13 +30,12 @@ atomic_multiswap**: This contract performs a batch of atomic token swaps between
 - **upgradeable_contract**: This contract demonstrates how to upgrade the Wasm bytecode using example contracts
 - **workspace**: This contract demonstrates how multiple smart contracts can be developed, tested, and built side-by-side in the same Rust workspace
 
-
-Quick Start
+## Quick Start
 The easiest way to get started experimenting with the example smart contracts, is to use GitPod. Run the smart contracts directly from the browser, without having to install tools, cloning the repo, building the code and deploying it to testnet.
 
-Try out the example smart contracts on GitPod
+[![Try out the example smart contracts on GitPod]](https://gitpod.io/#https://github.com/stellar/soroban-examples)
 
-Installation
+## Installation
 Stellar smart contracts are written in the Rust programming language and can be deployed to the testnet or mainnet. 
 Prerequisites
 To build and develop contracts you need only a couple prerequisites:
