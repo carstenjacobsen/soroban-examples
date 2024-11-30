@@ -69,7 +69,6 @@ stellar contract invoke \
 The following output should occur using the code above.
 
 ```json
-1
 "event": {"ext":"v0","contractId":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],"type":"contract","body":{"v0":{"topics":[{"symbol":[67,79,85,78,84,69,82]},{"symbol":[105,110,99,114,101,109,101,110,116]}],"data":{"u32":1}}}}
 ```
 
