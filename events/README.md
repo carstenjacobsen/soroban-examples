@@ -2,7 +2,7 @@
 
 Events are the mechanism that applications off-chain can use to monitor changes and events in contracts on-chain. This events example demonstrates how to publish events from a contract. This example is an extension of the [storing data example](https://developers.stellar.org/docs/build/smart-contracts/getting-started/storing-data). 
 
-See the [documentation](https://developers.stellar.org/docs/learn/encyclopedia/contract-development/events) for more information about events
+See the [documentation](https://developers.stellar.org/docs/learn/encyclopedia/contract-development/events) for more information about events, and a more [detailed explanation](https://developers.stellar.org/docs/build/smart-contracts/example-contracts/events) of this example smart contract.
 
 ## How it Works
 This example contract extends the increment example by publishing an event each time the counter is incremented. Contract events let contracts emit information about what their contract is doing. Contracts can publish events using the environments events publish function.
