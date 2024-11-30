@@ -1,17 +1,11 @@
-# Event
+# Events
 
-The events example demonstrates how to publish events from a contract. This example is an extension of the storing data example.
-
-Events are the mechanism that applications off-chain can use to monitor changes and events in contracts on-chain.
-
-
-https://developers.stellar.org/docs/learn/encyclopedia/contract-development/events
-
+Events are the mechanism that applications off-chain can use to monitor changes and events in contracts on-chain. This events example demonstrates how to publish events from a contract. This example is an extension of the [storing data example](https://developers.stellar.org/docs/build/smart-contracts/getting-started/storing-data). See the [documentation](https://developers.stellar.org/docs/learn/encyclopedia/contract-development/events) for more information about events
 
 
 ## Code
 
-```rust title="events/src/lib.rs"
+```rust
 const COUNTER: Symbol = symbol_short!("COUNTER");
 
 #[contract]
