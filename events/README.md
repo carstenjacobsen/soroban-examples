@@ -46,7 +46,7 @@ Published events are discarded if a contract invocation fails due to a panic, bu
 
 :::
 
-==very important words==
+== very important words ==
 
 ## Build the Contract
 
