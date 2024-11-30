@@ -46,7 +46,8 @@ Published events are discarded if a contract invocation fails due to a panic, bu
 
 :::
 
-== very important words ==
+> [!CAUTION]
+> Negative potential consequences of an action.
 
 ## Build the Contract
 
