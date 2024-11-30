@@ -18,11 +18,8 @@ Topics are conveniently defined using a tuple. In the sample code two topics of 
 env.events().publish((COUNTER, symbol_short!("increment")), ...);
 ```
 
-:::tip
-
-The topics don't have to be made of the same type.
-
-:::
+> [!TIP]
+> The topics don't have to be made of the same type.
 
 ### Event Data
 
@@ -40,14 +37,8 @@ Publishing an event is done by calling the `publish` function and giving it the 
 env.events().publish((COUNTER, symbol_short!("increment")), count);
 ```
 
-:::caution
-
-Published events are discarded if a contract invocation fails due to a panic, budget exhaustion, or when the contract returns an error.
-
-:::
-
 > [!CAUTION]
-> Negative potential consequences of an action.
+> Published events are discarded if a contract invocation fails due to a panic, budget exhaustion, or when the contract returns an error.
 
 ## Build the Contract
 
