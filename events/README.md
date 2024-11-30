@@ -1,6 +1,8 @@
 # Events
 
-Events are the mechanism that applications off-chain can use to monitor changes and events in contracts on-chain. This events example demonstrates how to publish events from a contract. This example is an extension of the [storing data example](https://developers.stellar.org/docs/build/smart-contracts/getting-started/storing-data). See the [documentation](https://developers.stellar.org/docs/learn/encyclopedia/contract-development/events) for more information about events
+Events are the mechanism that applications off-chain can use to monitor changes and events in contracts on-chain. This events example demonstrates how to publish events from a contract. This example is an extension of the [storing data example](https://developers.stellar.org/docs/build/smart-contracts/getting-started/storing-data). 
+
+See the [documentation](https://developers.stellar.org/docs/learn/encyclopedia/contract-development/events) for more information about events
 
 
 ## Code
