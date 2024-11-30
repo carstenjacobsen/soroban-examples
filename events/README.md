@@ -4,58 +4,14 @@ Events are the mechanism that applications off-chain can use to monitor changes 
 
 See the [documentation](https://developers.stellar.org/docs/learn/encyclopedia/contract-development/events) for more information about events
 
-
-## Code
-
-```rust
-const COUNTER: Symbol = symbol_short!("COUNTER");
-
-#[contract]
-pub struct IncrementContract;
-
-#[contractimpl]
-impl IncrementContract {
-    /// Increment increments an internal counter, and returns the value.
-    pub fn increment(env: Env) -> u32 {
-        // Get the current count.
-        let mut count: u32 = env.storage().instance().get(&COUNTER).unwrap_or(0); // If no value set, assume 0.
-
-        // Increment the count.
-        count += 1;
-
-        // Save the count.
-        env.storage().instance().set(&COUNTER, &count);
-
-        // Publish an event about the increment occuring.
-        // The event has two topics:
-        //   - The "COUNTER" symbol.
-        //   - The "increment" symbol.
-        // The event data is the count.
-        env.events()
-            .publish((COUNTER, symbol_short!("increment")), count);
-
-        // Return the count to the caller.
-        count
-    }
-}
-```
-
-Ref: https://github.com/stellar/soroban-examples/tree/v21.6.0/events
-
 ## How it Works
-
-This example contract extends the increment example by publishing an event each time the counter is incremented.
-
-Contract events let contracts emit information about what their contract is doing.
-
-Contracts can publish events using the environments events publish function.
+This example contract extends the increment example by publishing an event each time the counter is incremented. Contract events let contracts emit information about what their contract is doing. Contracts can publish events using the environments events publish function.
 
 ```rust
 env.events().publish(topics, data);
 ```
 
 ### Event Topics
-
 Topics are conveniently defined using a tuple. In the sample code two topics of `Symbol` type are used.
 
 ```rust
