@@ -1,10 +1,9 @@
 # Account
-
-Events are the mechanism that applications off-chain can use to monitor changes and events in contracts on-chain. This events example demonstrates how to publish events from a contract. This example is an extension of the [storing data example](https://developers.stellar.org/docs/build/smart-contracts/getting-started/storing-data). 
+Accounts are the central data structure in Stellar- they hold balances, sign transactions, and issue assets. Accounts can only exist with a valid keypair and the required minimum balance of XLM. This a basic multi-sig account contract that with a customizable per-token authorization policy. This demonstrates how to build the account contracts and how to use the authorization context in order to implement custom authorization policies that would govern all the account contract interactions.
 
 Quick links:
 - [Open example in GitPod](https://gitpod.io/#https://github.com/stellar/soroban-examples/tree/v21.6.0)
-- [Events documentation](https://developers.stellar.org/docs/learn/encyclopedia/contract-development/events)
+- [Accounts documentation](https://developers.stellar.org/docs/learn/fundamentals/stellar-data-structures/accounts)
 - [Detailed description of this example](https://developers.stellar.org/docs/build/smart-contracts/example-contracts/events)
 
 ## How it Works
