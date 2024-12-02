@@ -3,70 +3,21 @@ Accounts are the central data structure in Stellar- they hold balances, sign tra
 
 This example is a basic multi-sig account contract with a customizable per-token authorization policy. This example contract demonstrates how to build the account contract, and how to implement custom authorization policies that can govern all the account contract interactions.
 
+Custom accounts are exclusive to Soroban and can't be used to perform other Stellar operations.
+
 Quick links:
 - [Open example in GitPod](https://gitpod.io/#https://github.com/stellar/soroban-examples/tree/v21.6.0)
 - [Accounts documentation](https://developers.stellar.org/docs/learn/fundamentals/stellar-data-structures/accounts)
 
-> [!NOTE]  
-> Custom accounts are exclusive to Soroban and can't be used to perform other Stellar operations.
+
+
+> [!WARNING]  
+> Implementing a custom account contract requires a very good understanding of authentication and authorization and requires rigorous testing and review. The example here is _not_ a full-fledged account contract - use it as an API reference only.
+
+> [!CAUTION]  
+> While custom accounts are supported by the Stellar protocol and Soroban SDK, the full client support (such as transaction simulation) is still under development.
 
 ## How it Works
-
-
-
-
-
-
-
-
-
-
-:::danger
-
-Implementing a custom account contract requires a very good understanding of authentication and authorization and requires rigorous testing and review. The example here is _not_ a full-fledged account contract - use it as an API reference only.
-
-:::
-
-:::caution
-
-While custom accounts are supported by the Stellar protocol and Soroban SDK, the full client support (such as transaction simulation) is still under development.
-
-:::
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)][oigp]
-
-[oigp]: https://gitpod.io/#https://github.com/stellar/soroban-examples/tree/v21.6.0
-[custom account example]: https://github.com/stellar/soroban-examples/tree/v21.6.0/account
-
-## Run the Example
-
-First go through the [Setup] process to get your development environment configured, then clone the `v21.6.0` tag of `soroban-examples` repository:
-
-[setup]: ../getting-started/setup.mdx
-
-```
-git clone -b v21.6.0 https://github.com/stellar/soroban-examples
-```
-
-Or, skip the development environment setup and open this example in [Gitpod][oigp].
-
-To run the tests for the example use `cargo test`.
-
-```
-cargo test -p soroban-account-contract
-```
-
-You should see the output:
-
-```
-running 1 test
-test test::test_token_auth ... ok
-```
-
-## How it Works
-
-Open the `account/src/lib.rs` file to follow along.
-
 Account contracts implement a special function `__check_auth` that takes the signature payload, signatures and authorization context. The function should error if auth is declined, otherwise auth will be approved.
 
 This example contract uses ed25519 keys for signature verification and supports multiple equally weighted signers. It also implements a policy that allows setting per-token limits on transfers. The token can be spent beyond the limit only if every signature is provided.
