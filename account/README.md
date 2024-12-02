@@ -222,7 +222,7 @@ Ok(())
 
 Then we check for the standard token function names and verify that for these function we don't exceed the spending limits.
 
-### Tests
+## Tests
 
 Open the [`account/src/test.rs`] file to follow along.
 
