@@ -223,12 +223,11 @@ Ok(())
 Then we check for the standard token function names and verify that for these function we don't exceed the spending limits.
 
 ## Tests
+From the root of the contract run this command to test the smart contract:
 
-Open the [`account/src/test.rs`] file to follow along.
-
-[`account/src/test.rs`]: https://github.com/stellar/soroban-examples/tree/v21.6.0/account/src/test.rs
-
-Refer to another examples for the general information on the test setup.
+```
+cargo test
+```
 
 Here we only look at some points specific to the account contracts.
 
