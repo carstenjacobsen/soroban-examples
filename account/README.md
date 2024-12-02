@@ -3,12 +3,12 @@ Accounts are the central data structure in Stellar- they hold balances, sign tra
 
 This example is a basic multi-sig account contract with a customizable per-token authorization policy. This example contract demonstrates how to build the account contract, and how to implement custom authorization policies that can govern all the account contract interactions.
 
-> [!NOTE]  
-> Custom accounts are exclusive to Soroban and can't be used to perform other Stellar operations.
-
 Quick links:
 - [Open example in GitPod](https://gitpod.io/#https://github.com/stellar/soroban-examples/tree/v21.6.0)
 - [Accounts documentation](https://developers.stellar.org/docs/learn/fundamentals/stellar-data-structures/accounts)
+
+> [!NOTE]  
+> Custom accounts are exclusive to Soroban and can't be used to perform other Stellar operations.
 
 ## How it Works
 
