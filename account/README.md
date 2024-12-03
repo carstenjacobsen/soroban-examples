@@ -223,7 +223,7 @@ Ok(())
 Then we check for the standard token function names and verify that for these function we don't exceed the spending limits.
 
 ## Tests
-From the root of the contract run this command to test the smart contract:
+There are multiple steps to running this example, so for demontration purposes, running the test is a simple way to try out the contract. The test file also demonstrates how to use the contract in details. From the root of the contract run this command to test the smart contract:
 
 ```
 cargo test
