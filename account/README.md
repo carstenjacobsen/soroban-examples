@@ -8,7 +8,7 @@ Custom accounts are exclusive to Soroban and can't be used to perform other Stel
 Quick links:
 - [Open example in GitPod](https://gitpod.io/#https://github.com/stellar/soroban-examples/tree/v21.6.0)
 - [Accounts documentation](https://developers.stellar.org/docs/learn/fundamentals/stellar-data-structures/accounts)
-
+- [Detailed description of this example](https://developers.stellar.org/docs/build/smart-contracts/example-contracts/custom-account)
 
 
 > [!WARNING]  
