@@ -1,5 +1,5 @@
 # Atomic Multiswap
-This example contract swaps two tokens between two authorized parties atomically while following the limits they set. This is example demonstrates advanced usage of Soroban auth framework and assumes the reader is familiar with the auth example and with Soroban token usage.
+This atomic swap batching example swaps a pair of tokens between the two groups of users that authorized the swap operation from the [Atomic](../atomic-swap) Swap example. This contract basically batches the multiple swaps while following some simple rules to match the swap participants.
 
 ## Test
 For a quick test of the smart contract, run a test using the provided test file, `atomic_multiswap/src/test.rs`. The test will just return a pass/fail result, but it’s a convenient way to check if the code works, without deploying and invoking the contract manually. The test file also demonstates how to invoke the smart contract. 
@@ -22,5 +22,5 @@ See the main [README](../README.md) file for information about how to build and 
 ## Relevant Links
 - [Open example in GitPod](https://gitpod.io/#https://github.com/stellar/soroban-examples/tree/v21.6.0)
 - [Authorization documentation](https://developers.stellar.org/docs/learn/encyclopedia/security/authorization)
-- [Detailed description of this example](https://developers.stellar.org/docs/build/smart-contracts/example-contracts/atomic-swap)
+- [Detailed description of this example](https://developers.stellar.org/docs/build/smart-contracts/example-contracts/atomic-multi-swap)
 - [Getting Started documentation](https://developers.stellar.org/docs/build/smart-contracts/getting-started)
