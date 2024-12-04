@@ -18,6 +18,14 @@ From the root of the contract (e.g. `increment`) run this command:
 cargo test
 ```
 
+You should see the output:
+
+```
+running 1 test
+test test::test ... ok
+```
+
+See the main [README](../README.md) file for information about how to build and invoke the code using the CLI.
 
 ## Quick Links
 - [Open example in GitPod](https://gitpod.io/#https://github.com/stellar/soroban-examples/tree/v21.6.0)
