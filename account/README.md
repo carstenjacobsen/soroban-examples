@@ -27,5 +27,6 @@ See the main [README](../README.md) file for information about how to build and 
 - [Open example in GitPod](https://gitpod.io/#https://github.com/stellar/soroban-examples/tree/v21.6.0)
 - [Accounts documentation](https://developers.stellar.org/docs/learn/fundamentals/stellar-data-structures/accounts)
 - [Detailed description of this example](https://developers.stellar.org/docs/build/smart-contracts/example-contracts/custom-account)
+- [Getting Started documentation](https://developers.stellar.org/docs/build/smart-contracts/getting-started)
 
 
