@@ -6,13 +6,9 @@ This example is a basic multi-sig account contract with a customizable per-token
 Custom accounts are exclusive to Soroban and can't be used to perform other Stellar operations.
 
 ## Test
+For a quick test of the smart contract, run a test using the provided file, `account/src/test.rs`. The test will just return a pass/fail result, but it’s a convenient way to check if the code works, without deploying and invoking the contract manually. The test file also demonstates how to invoke the smart contract. 
 
-Open the `account/src/test.rs` file to follow along.
-
-
-Each of the example smart contracts also has a test file that has test cases for each of the features of the smart contracts. The test will just return a pass/fail result, but it’s a convenient way to check if the code works, without deploying and invoking the contract manually. 
-
-From the root of the contract (e.g. `increment`) run this command:
+From the root of the contract run this command:
 
 ```
 cargo test
