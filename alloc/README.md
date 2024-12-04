@@ -21,7 +21,7 @@ See the main [README](../README.md) file for information about how to build and 
 
 ## Relevant Links
 - [Open example in GitPod](https://gitpod.io/#https://github.com/stellar/soroban-examples/tree/v21.6.0)
-- [Allocation documentation](https://developers.stellar.org/docs/learn/encyclopedia/contract-development/rust-dialect#limited-ideally-zero-dynamic-memory-allocation))
+- [Allocation documentation](https://developers.stellar.org/docs/learn/encyclopedia/contract-development/rust-dialect#limited-ideally-zero-dynamic-memory-allocation)
 - [Detailed description of this example](https://developers.stellar.org/docs/build/smart-contracts/example-contracts/alloc)
 - [Getting Started documentation](https://developers.stellar.org/docs/build/smart-contracts/getting-started)
 
