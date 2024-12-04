@@ -1,8 +1,8 @@
 # Atomic Swap
-This example contract swaps two tokens between two authorized parties atomically while following the limits they set. This is example demonstrates advanced usage of Soroban auth framework and assumes the reader is familiar with the auth example and with Soroban token usage.
+This example contract swaps two tokens between two authorized parties atomically while following the limits they set. This example demonstrates advanced usage of Soroban auth framework and assumes the reader is familiar with the [auth](../auth) example and with Soroban token usage.
 
 ## Test
-For a quick test of the smart contract, run a test using the provided test file, `atomic_multiswap/src/test.rs`. The test will just return a pass/fail result, but it’s a convenient way to check if the code works, without deploying and invoking the contract manually. The test file also demonstates how to invoke the smart contract. 
+For a quick test of the smart contract, run a test using the provided test file, `atomic_swap/src/test.rs`. The test will just return a pass/fail result, but it’s a convenient way to check if the code works, without deploying and invoking the contract manually. The test file also demonstates how to invoke the smart contract. 
 
 From the root of the contract run this command:
 
