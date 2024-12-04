@@ -1,5 +1,5 @@
 # Atomic Multiswap
-This atomic swap batching example swaps a pair of tokens between the two groups of users that authorized the swap operation from the [Atomic](../atomic-swap) Swap example. This contract basically batches the multiple swaps while following some simple rules to match the swap participants.
+This atomic swap batching example swaps a pair of tokens between the two groups of users that authorized the swap operation from the [Atomic Swap](../atomic_swap) example. This contract basically batches the multiple swaps while following some simple rules to match the swap participants.
 
 ## Test
 For a quick test of the smart contract, run a test using the provided test file, `atomic_multiswap/src/test.rs`. The test will just return a pass/fail result, but it’s a convenient way to check if the code works, without deploying and invoking the contract manually. The test file also demonstates how to invoke the smart contract. 
