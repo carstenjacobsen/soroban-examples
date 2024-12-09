@@ -33,7 +33,7 @@ atomic_multiswap**: This contract performs a batch of atomic token swaps between
 ## Quick Start
 The easiest way to get started experimenting with the example smart contracts, is to use GitPod. Run the smart contracts directly from the browser, without having to install tools, cloning the repo, building the code and deploying it to testnet.
 
-[Try out the example smart contracts on GitPod](https://gitpod.io/#https://github.com/stellar/soroban-examples)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/stellar/soroban-examples)
 
 
 ## Installation
